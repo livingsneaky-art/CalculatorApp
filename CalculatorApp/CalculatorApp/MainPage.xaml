@@ -3,22 +3,190 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CalculatorApp.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+    <StackLayout Padding="20">
+        
+        <Frame BackgroundColor="WhiteSmoke"
+               Padding="15"
+               Margin="0,0,0,20">
+            
+            <Label x:Name="LblResult"
+                   Text="0"
+                   FontSize="36"
+                   FontAttributes="Bold"
+                   HorizontalOptions="End">
+            </Label>
+            
         </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <!--1 no row-->
+            
+            <Button Grid.Row="0"
+                    Grid.Column="0"
+                    Text="C"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    x:Name="BtnClear"
+                    Clicked="BtnClear_Clicked"/>
+            <Button Grid.Row="0"
+                    Grid.Column="1"
+                    Text="X"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    x:Name="BtnX"
+                    Clicked="BtnX_Clicked"/>
+            <Button Grid.Row="0"
+                    Grid.Column="2"
+                    Text="%"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    x:Name="BtnPercentage"
+                    Clicked="BtnPercentage_Clicked"/>
+            <Button Grid.Row="0"
+                    Grid.Column="3"
+                    Text="/"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnCommonOperation_Cliked"/>
+
+            <!--2 no row-->
+            
+            <Button Grid.Row="1"
+                    Grid.Column="0"
+                    Text="1"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnCommon_Clicked"/>
+            <Button Grid.Row="1"
+                    Grid.Column="1"
+                    Text="2"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnCommon_Clicked"/>
+            <Button Grid.Row="1"
+                    Grid.Column="2"
+                    Text="3"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnCommon_Clicked"/>
+            <Button Grid.Row="1"
+                    Grid.Column="3"
+                    Text="*"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnCommonOperation_Cliked"/>
+            
+            <!--3 no row-->
+
+            <Button Grid.Row="2"
+                    Grid.Column="0"
+                    Text="4"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnCommon_Clicked"/>
+            <Button Grid.Row="2"
+                    Grid.Column="1"
+                    Text="5"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnCommon_Clicked"/>
+            <Button Grid.Row="2"
+                    Grid.Column="2"
+                    Text="6"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnCommon_Clicked"/>
+            <Button Grid.Row="2"
+                    Grid.Column="3"
+                    Text="-"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnCommonOperation_Cliked"/>
+            
+            <!--4 no row-->
+
+            <Button Grid.Row="3"
+                    Grid.Column="0"
+                    Text="7"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnCommon_Clicked"/>
+            <Button Grid.Row="3"
+                    Grid.Column="1"
+                    Text="8"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnCommon_Clicked"/>
+            <Button Grid.Row="3"
+                    Grid.Column="2"
+                    Text="9"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnCommon_Clicked"/>
+            <Button Grid.Row="3"
+                    Grid.Column="3"
+                    Grid.RowSpan="2"
+                    Text="+"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnCommonOperation_Cliked"/>
+            
+            <!--5 no row-->
+
+            <Button Grid.Row="4"
+                    Grid.Column="0"
+                    Text="."
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnCommon_Clicked"/>
+            <Button Grid.Row="4"
+                    Grid.Column="1"
+                    Text="0"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnCommon_Clicked"/>
+            <Button Grid.Row="4"
+                    Grid.Column="2"
+                    Text="="
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    x:Name="BtnEqual"
+                    Clicked="BtnEqual_Clicked"/>
+
+           
+        </Grid>
     </StackLayout>
 
 </ContentPage>
