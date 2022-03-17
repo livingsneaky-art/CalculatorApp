@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+[assembly:ExportFont("digital-7.ttf")]
+
 
 namespace CalculatorApp
 {

@@ -10,6 +10,7 @@
                Margin="0,0,0,20">
             
             <Label x:Name="LblResult"
+                   FontFamily="digital-7.ttf#Digital-7 Regualar"
                    Text="0"
                    FontSize="36"
                    FontAttributes="Bold"

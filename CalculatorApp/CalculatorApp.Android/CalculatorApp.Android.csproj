@@ -67,6 +67,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\digital-7 %28mono italic%29.ttf" />
+    <AndroidAsset Include="Assets\digital-7 %28mono%29.ttf" />
+    <AndroidAsset Include="Assets\digital-7.ttf" />
+    <AndroidAsset Include="Assets\digital-7 %28italic%29.ttf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
